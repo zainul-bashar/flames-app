@@ -10,8 +10,16 @@ const Main = () => {
     const [secondName, setSecondName] = useState('');
     const [result, setResult] = useState('');
     const [error, setError] = useState('');
+    const [fun, setFun] = useState('');
+
 
     const mainFnc = (firstName,secondName) =>{
+
+        if( firstName === 'mukesh' || secondName === 'mukesh'){
+            setFun('Mukesh You are also the son of Bashar')
+        }else if( firstName === 'ritesh' || secondName === 'ritesh' ){
+            setFun('Ritesh You are also the son of Bashar')
+        }
 
         if( !firstName && !secondName ){
             setError('Please Enter Both Names');
@@ -45,6 +53,8 @@ const Main = () => {
          }else{
             setResult('Love Birds')
          }
+         setFirstName('')
+         setSecondName('')
 
     }
 
@@ -68,6 +78,7 @@ const Main = () => {
             <button className='btn2' onClick={erase}>clear</button>
             <h1>{error}</h1>
             <h1>{result}</h1>
+            <h1>{fun}</h1>
         </div>
     )
 }
