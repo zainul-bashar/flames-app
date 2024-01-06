@@ -80,9 +80,9 @@ const Main = () => {
             onChange={(e)=> setSecondName(e.target.value)} value={secondName}></input><br/>
             <button className='btn1' onClick={()=>mainFnc(firstName,secondName)}>calculate relationship future</button><br/>
             <button className='btn2' onClick={erase}>clear</button>
+            <h1>{fun}</h1>
             <h1>{error}</h1>
             <h1>{result}</h1>
-            <h1>{fun}</h1>
         </div>
     )
 }
