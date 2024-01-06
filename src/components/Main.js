@@ -19,6 +19,10 @@ const Main = () => {
             setFun('Mukesh You are also the son of Bashar')
         }else if( firstName === 'ritesh' || secondName === 'ritesh' ){
             setFun('Ritesh You are also the son of Bashar')
+        }else if( firstName === 'Ritesh' || secondName === 'Ritesh' ){
+            setFun('Ritesh You are also the son of Bashar')
+        }else if( firstName === 'Mukesh' || secondName === 'Mukesh' ){
+            setFun('Mukesh You are also the son of Bashar')
         }
 
         if( !firstName && !secondName ){
